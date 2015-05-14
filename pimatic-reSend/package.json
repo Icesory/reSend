@@ -1,0 +1,27 @@
+{ "name": "pimatic-reSend",
+  "description": "Wiederholt den zustandt aller eingetragenen Devices alle 30min",
+  "author": "Christian Schlicker",
+  "main": "reSend",
+  "files": [
+    "reSend.coffee",
+    "README.md",
+    "reSend-config-schema.coffee"
+  ],
+  "version": "1.0.0",
+  "homepage": "http://...",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/..."
+  },
+  "configSchema": "reSend-config-schema.coffee",
+  "dependencies": {
+  },
+  "peerDependencies": {
+    "pimatic": "0.8.*"
+  },
+  "engines": {
+    "node": ">0.8.x",
+    "npm": ">1.1.x"
+  }
+}
