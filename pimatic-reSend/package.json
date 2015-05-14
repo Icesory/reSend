@@ -12,7 +12,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git://github.com/..."
+    "url": "git://github.com/pishit/reSend"
   },
   "configSchema": "reSend-config-schema.coffee",
   "dependencies": {
