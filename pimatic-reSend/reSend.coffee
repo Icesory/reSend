@@ -13,8 +13,11 @@ module.exports = (env) ->
              (device) => device.hasAction("getState")
            ).value()
            env.logger.info(deviceList)
-           for device in deviceListe
-             if device.id is id then env.logger.info("TEST")
-
+           for deviceEntry in @config.devices
+             for device in deviceList
+               if device.id is deviceEntry.id
+                 env.logger.debug("device gefunden")
+                 break #nach keinen devices mehr in dieser runde suchen
+                 
   reSend = new reSend
   return reSend
