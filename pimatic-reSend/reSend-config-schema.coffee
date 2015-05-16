@@ -4,8 +4,12 @@ module.exports = {
   title: "reSend config options"
   type: "object"
   properties:
-    option1:
-      description: "Some option"
-      type: "string"
-      default: "foo"
+    id:
+      description: "the device id"
+      type: "String"
+      default: ""
+    interval:
+      description: "the delay between pings"
+      type: "number"
+      default: 5000
 }
