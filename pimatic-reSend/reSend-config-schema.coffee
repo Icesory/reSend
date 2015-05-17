@@ -5,15 +5,18 @@ module.exports = {
   type: "object"
   properties:
     devices:
-      description: "Device..."
-      type: "Array"
-      default: ""
-    id:
-      description: "the device id"
-      type: "String"
-      default: ""
-    interval:
-      description: "the delay between pings"
-      type: "number"
-      default: 5000
+      description: "Devices"
+      type: "array"
+      default: []
+      format: "table"
+      items:
+        type: "object"
+        properties:
+          id:
+            description: "the device id"
+            type: "string"
+          interval:
+            description: "the delay between sends"
+            type: "number"
+            default: 60000
 }
