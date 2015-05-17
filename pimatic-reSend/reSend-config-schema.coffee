@@ -4,6 +4,10 @@ module.exports = {
   title: "reSend config options"
   type: "object"
   properties:
+    devices:
+      description: "Device..."
+      type: "Array"
+      default: ""
     id:
       description: "the device id"
       type: "String"
